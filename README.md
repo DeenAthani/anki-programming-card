@@ -217,7 +217,7 @@ Wrap any term you want to test in cloze syntax:
 {{c1::token}}
 ```
 
-You can also highlight a token in Anki and click the `[...]+` button near the `$f_x$` button to wrap it automatically. Number the clozes sequentially. The Cloze Overlapping engine creates one sub-card per cloze number, testing each token individually while leaving the surrounding code visible.
+You can also highlight a token in Anki and click the `[...]+` button near the $f_x$ button to wrap it automatically. Number the clozes sequentially. The Cloze Overlapping engine creates one sub-card per cloze number, testing each token individually while leaving the surrounding code visible.
 
 For multi-word tokens, wrap the whole phrase:
 
@@ -267,6 +267,19 @@ For serious study, these add-ons are worth considering:
 
 - **FSRS4Anki** (add-on ID: `759844606`): a modern spaced-repetition algorithm that is meaningfully more efficient than the default SM-2 scheduler for technical material.
 - **Review Heatmap** (add-on ID: `1771074083`): useful for tracking consistency, which matters more than the length of any single study session.
+
+---
+## Prior Art & Acknowledgements
+
+This project is not the first attempt to make Anki friendlier for programming study, typed answers, or syntax-highlighted code. It stands on the shoulders of earlier experiments, add-ons, templates, and long-suffering Anki users who looked at plain flashcards and decided the old ways were not enough.
+
+- [ValentinSchwind/Multi-Line-Typing-Anki-Template](https://github.com/ValentinSchwind/Multi-Line-Typing-Anki-Template) provides an Anki template for multi-line typed answers, answer comparison, and syntax highlighting. It is a useful neighbouring project for anyone who wants richer typed-code review behaviour.
+- The `diff_match_patch` work by Neil Fraser and contributors is acknowledged by that project for typed-answer comparison.
+- `prism.js` and `highlight.js` are both part of the broader ecosystem that made syntax-highlighted Anki cards practical.
+- Arthur Milchior’s writing on using `highlight.js` in Anki templates helped establish the path for this.
+- The wider Anki add-on and template community, including projects around multi-line answer boxes and static syntax highlighting, deserves credit for proving that programming cards can be more than grey boxes and wishful thinking.
+
+This repository focuses specifically on adapting **Cloze Overlapping** cards for programming study while keeping syntax highlighting local, offline, and copy-pasteable. 
 
 ---
 
