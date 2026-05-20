@@ -1,0 +1,328 @@
+.card {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  color: white;
+  line-height: 1.6;
+  background-color: #2c2c2c;
+}
+a {
+  color: #b8dcff;
+}
+.answerCard {
+  font-size: 116%;
+}
+.cloze {
+ font-weight: normal;
+ filter: drop-shadow(0px 2px 1px black)
+}
+.cloze:not(.answerCard) {
+ color: MediumSeaGreen;
+}
+.cloze img {
+ border: 2px solid MediumSeaGreen;
+ filter: drop-shadow(0px 2px 1px black)
+}
+img{
+  max-width: min(800px, 100%);
+}
+iframe {
+  max-width: min(800px, 100%);
+}
+.black {
+background: black;
+color: white;
+}
+.white {
+background-color: white;
+}
+#kofi {
+width: 40px;
+position: fixed;
+left: 12px;
+top: 0px;
+z-index: 10;
+}
+#like {
+width: 28px;
+position: fixed;
+left: 50px;
+top: 5px;
+z-index: 10;
+}
+.mobile #kofi {
+width: 40px;
+position: fixed;
+left: -6px;
+z-index: 10;
+}
+.mobile #like {
+width: 28px;
+position: fixed;
+left: 32px;
+z-index: 10;
+}
+:not(b, u) > i:hover { filter: brightness(120%) saturate(200%) drop-shadow(0px 2px 1px black) !important;}
+:not(u, i) > b:hover { filter: brightness(120%) saturate(170%) drop-shadow(0px 2px 1px black);}
+:not(b, i) > u:hover { filter: brightness(120%) saturate(120%) drop-shadow(0px 2px 1px black);}
+u:has(code) {text-decoration: none}
+code u {text-decoration: none}
+b { color: Plum; }
+u { color: MediumTurquoise}
+i  { color: Indianred; }
+b i { color: #ad74ad; }
+b u { color: #d971d9; }
+i b { color: #ff8ab4; }
+i u { color: PaleVioletRed; }
+u b { color: PaleTurquoise; }
+u i { color: DarkCyan; }
+.cloze b { color: #3dff91; filter: drop-shadow(0px -1px 1px black)}
+.cloze u { color: #34f7a9; filter: drop-shadow(0px -1px 1px black)}
+.cloze i:not(u i):not(b i) { color: #4ced66; filter: drop-shadow(0px -1px 1px black)}
+.cloze b i { color: #519c71;}
+.cloze b u { color: #00e864;}
+.cloze i b { color: #75ff93;}
+.cloze i u { color: #4dff6a;}
+.cloze u b { color: #a1ffe6;}
+.cloze u i { color: #238269;}
+.cloze:hover { color: #e8cd00 !important;}
+.cloze img:hover { border-color: #e8cd00 !important;}
+.cloze:hover b { color: #ed587b;}
+.cloze:hover u { color: #40b6ff;}
+.cloze:hover i { color: #de8500;}
+.cloze:hover b i { color: #a85469;}
+.cloze:hover b u { color: #c73c5c;}
+.cloze:hover i b { color: #ffa573;}
+.cloze:hover i u { color: #eb7900;}
+.cloze:hover u b { color: #8fe2ff;}
+.cloze:hover u i { color: #21698a;}
+#tags-container { display: block; }
+.mobile #tags-container { display: block; }
+#tags-container { padding-bottom: 0px; }
+#tags-container { background-color: transparent; }
+#tags-container{
+position: fixed;
+bottom: .5px;
+width: 100%;
+line-height: 1rem;
+margin-left: -15px;
+}
+.mobile #tags-container{
+bottom: -20px;
+}
+kbd {
+display: inline-block;
+letter-spacing: .1px;
+font-weight: bold;
+font-size: 10px !important;
+text-shadow: none !important;
+padding: 0.05rem 0.1rem !important;
+margin: 1px 3px !important;
+border-radius: 4px;
+border-width: 1.5px !important;
+border-style: solid;
+background-color: transparent !important;
+box-shadow: none !important;
+opacity: 0.5;
+vertical-align: middle !important;
+line-height: auto!important;
+height: auto!important;
+}
+kbd:hover { opacity: 1; transition: opacity 0.2s ease; }
+kbd:nth-of-type(1n+0) { border-color: #F44336; color: #F44336!important; }
+kbd:nth-of-type(2n+0) { border-color: #9C27B0; color: #9C27B0!important; }
+kbd:nth-of-type(3n+0) { border-color: #3F51B5; color: #3F51B5!important; }
+kbd:nth-of-type(4n+0) { border-color: #03A9F4; color: #03A9F4!important; }
+kbd:nth-of-type(5n+0) { border-color: #009688; color: #009688!important; }
+kbd:nth-of-type(6n+0) { border-color: #C0CA33; color: #C0CA33!important; }
+kbd:nth-of-type(7n+0) { border-color: #FF9800; color: #FF9800!important;}
+kbd:nth-of-type(8n+0) { border-color: #FF5722; color: #FF5722!important; }
+kbd:nth-of-type(9n+0) { border-color: #9E9E9E; color: #9E9E9E!important; }
+kbd:nth-of-type(10n+0) { border-color: #607D8B; color: #607D8B!important; }
+.mobile kbd { opacity: .9; margin: 1px !important; display: inline-block; font-size: 10px !important; }
+.mobile #tags-container {line-height:0.6rem; margin-left: 0px; }
+#tradeoffer {
+  display: block;
+  max-height: 100vh;
+  opacity: 1;
+  overflow: hidden;
+  animation: shrinkVert 0.5s ease forwards;
+  animation-delay: 5s;
+}
+@keyframes shrinkVert {
+  to {
+    max-height: 0;
+  }
+}
+input#typeans {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px;
+  margin-top: 10px;
+  width: 80%;
+  max-width: 400px;
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+/* Prompt and answer panels */
+.prompt-panel,
+.answer-panel {
+  max-width: 900px;
+  margin: 0 auto 16px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.answer-panel {
+  margin-top: 18px;
+}
+
+.panel-label {
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.prompt-content,
+.answer-content {
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+/* -- LANGUAGE THEME LAYER ------------------------------
+   Append below your existing CSS. Do not replace anything.
+   Use "Cpp" and "CSharp" in the Language field.         */
+
+/* Shared code block style */
+.lang-Python pre, .lang-Python code,
+.lang-Cpp pre,    .lang-Cpp code,
+.lang-SQL pre,    .lang-SQL code,
+.lang-Java pre,   .lang-Java code,
+.lang-CSharp pre, .lang-CSharp code,
+.lang-Rust pre,   .lang-Rust code,
+.lang-Go pre,     .lang-Go code {
+  display: block;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 13px;
+  line-height: 1.75;
+  overflow-x: auto;
+  white-space: pre;
+  text-align: left;
+}
+
+/* Typing area input */
+.lang-Python #typeans,
+.lang-Cpp    #typeans,
+.lang-SQL    #typeans,
+.lang-Java   #typeans,
+.lang-CSharp #typeans,
+.lang-Rust   #typeans,
+.lang-Go     #typeans {
+  border-radius: 6px;
+  padding: 7px 12px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 13px;
+  width: 60%;
+}
+
+/* Python — GitHub Dark */
+.card:has(.lang-Python), .lang-Python { background: #0d1117; color: #c9d1d9; }
+.lang-Python .cloze { color: #58a6ff; }
+.lang-Python .prompt-panel, .lang-Python .answer-panel {
+  background: #161b22; border: 1px solid #30363d;
+}
+.lang-Python pre, .lang-Python code {
+  background: #161b22; border: 1px solid #30363d; color: #c9d1d9;
+}
+.lang-Python #typeans {
+  background: #161b22; border: 1.5px solid #58a6ff; color: #c9d1d9;
+}
+
+/* C++ — Catppuccin Mocha / Cursor */
+.card:has(.lang-Cpp), .lang-Cpp { background: #1e1e2e; color: #cdd6f4; }
+.lang-Cpp .cloze { color: #89dceb; }
+.lang-Cpp .prompt-panel, .lang-Cpp .answer-panel {
+  background: #262637; border: 1px solid #44475a;
+}
+.lang-Cpp pre, .lang-Cpp code {
+  background: #262637; border: 1px solid #44475a; color: #cdd6f4;
+}
+.lang-Cpp #typeans {
+  background: #262637; border: 1.5px solid #89dceb; color: #cdd6f4;
+}
+
+/* SQL — Dark Navy + Amber */
+.card:has(.lang-SQL), .lang-SQL { background: #1a1a2e; color: #eaeaea; }
+.lang-SQL .cloze { color: #f5a623; }
+.lang-SQL .prompt-panel, .lang-SQL .answer-panel {
+  background: #16213e; border: 1px solid #0f3460;
+}
+.lang-SQL pre, .lang-SQL code {
+  background: #16213e; border: 1px solid #0f3460; color: #eaeaea;
+}
+.lang-SQL #typeans {
+  background: #16213e; border: 1.5px solid #f5a623; color: #eaeaea;
+}
+
+/* Java — JetBrains Darcula */
+.card:has(.lang-Java), .lang-Java { background: #1e1f22; color: #bcbec4; }
+.lang-Java .cloze { color: #ffc66d; }
+.lang-Java .prompt-panel, .lang-Java .answer-panel {
+  background: #2b2d30; border: 1px solid #43454a;
+}
+.lang-Java pre, .lang-Java code {
+  background: #2b2d30; border: 1px solid #43454a; color: #bcbec4;
+}
+.lang-Java #typeans {
+  background: #2b2d30; border: 1.5px solid #ffc66d; color: #bcbec4;
+}
+
+/* C# — Visual Studio Dark */
+.card:has(.lang-CSharp), .lang-CSharp { background: #1e1e1e; color: #d4d4d4; }
+.lang-CSharp .cloze { color: #4ec9b0; }
+.lang-CSharp .prompt-panel, .lang-CSharp .answer-panel {
+  background: #252526; border: 1px solid #3c3c3c;
+}
+.lang-CSharp pre, .lang-CSharp code {
+  background: #252526; border: 1px solid #3c3c3c; color: #d4d4d4;
+}
+.lang-CSharp #typeans {
+  background: #252526; border: 1.5px solid #4ec9b0; color: #d4d4d4;
+}
+
+/* Rust — Oxide Dark */
+.card:has(.lang-Rust), .lang-Rust { background: #1f1b16; color: #f0e6d2; }
+.lang-Rust .cloze { color: #dea584; }
+.lang-Rust .prompt-panel, .lang-Rust .answer-panel {
+  background: #2b2118; border: 1px solid #5a3b24;
+}
+.lang-Rust pre, .lang-Rust code {
+  background: #2b2118; border: 1px solid #5a3b24; color: #f0e6d2;
+}
+.lang-Rust #typeans {
+  background: #2b2118; border: 1.5px solid #dea584; color: #f0e6d2;
+}
+
+/* Go — Gopher Blue */
+.card:has(.lang-Go), .lang-Go { background: #071f2a; color: #d5f4ff; }
+.lang-Go .cloze { color: #00add8; }
+.lang-Go .prompt-panel, .lang-Go .answer-panel {
+  background: #0b2b3a; border: 1px solid #126b82;
+}
+.lang-Go pre, .lang-Go code {
+  background: #0b2b3a; border: 1px solid #126b82; color: #d5f4ff;
+}
+.lang-Go #typeans {
+  background: #0b2b3a; border: 1.5px solid #00add8; color: #d5f4ff;
+}
